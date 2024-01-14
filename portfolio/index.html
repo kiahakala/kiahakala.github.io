@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="description" content="Developer portfolio website">
+    <meta
+      name="keywords"
+      content="Developer, portfolio, website, frontend, HTML, CSS">
+    <meta name="author" content="Kia Hakala">
+    <link rel="stylesheet" href="styles/default.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Kia Hakala - Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Sticky navigation -->
+    <nav>
+      <a
+        href="#home"
+        class="nav-item active"
+        onclick="setSelected(event, 'home')"
+        >aloitus</a
+      >
+      <a href="#about" class="nav-item" onclick="setSelected(event, 'about')"
+        >minä</a
+      >
+      <a href="#work" class="nav-item" onclick="setSelected(event, 'work')"
+        >työt</a
+      >
+      <a
+        href="#hobbies"
+        class="nav-item"
+        onclick="setSelected(event, 'hobbies')"
+        >harrastukset</a
+      >
+    </nav>
+    <main>
+      <!-- Header -->
+      <header class="main-section" id="home">
+        <h1 data-text=" Hakala">Kia</h1>
+        <h2 class="typer" data-text="sovelluskehittäjä">sovelluskehittäjä</h2>
+      </header>
+      <!-- About section -->
+      <div class="main-section" id="about">
+        <!-- Intro subsection -->
+        <div id="introduction">
+          <img src="images/Kia_omakuva.PNG" alt="Kia Hakalan omakuva">
+          <p>
+            Olen Nokialla asuva sovelluskehittäjä ja ensimmäisen vuoden ICT-alan
+            insinööriopiskelija. Opiskelen Jamkissa monimuotona päivätyön
+            ohella. Päivätyöni on tällä hetkellä sovelluskehitystä
+            <a href="https://www.jidoka.fi/" target="_blank" class="link"
+              >Jidoka Technologiesin</a
+            >
+            R&D-tiimissä. Toivon ja uskon, että opin paljon uutta ja pystyn
+            hyödyntämään oppimaani työssäni.
+            <br>
+            <br>
+            Ammatillinen tavoitteeni tällä hetkellä on kasvaa monipuoliseksi ja
+            osaavaksi frontend-kehittäjäksi. Alan työkokemusta on kertynyt pari
+            vuotta. Leipätyön ohella olen työstänyt omia projekteja JS- ja
+            React-painotteisesti. Projektista riippumatta pyrin
+            funktionaalisuuden ja erinomaisen UX:n lisäksi visuaalisesti
+            miellyttävään lopputulokseen.
+            <br>
+            <br>
+            Vahvuuksiani ovat <strong>luovuus,</strong>
+            <strong>sinnikkyys,</strong> <strong>perusteellisuus,</strong>
+            <strong>itseohjautuvuus,</strong>
+            <strong>viestintätaidot</strong> ja
+            <strong>into oppia uutta.</strong>
+          </p>
+        </div>
+        <!-- Stack subsection including dev icons imported in <head> -->
+        <section id="stack">
+          <h2>Stack</h2>
+          <div class="icon-container">
+            <div class="icon-element">
+              <i class="devicon-android-plain colored"></i>
+              <div class="capt">android</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-csharp-plain colored"></i>
+              <div class="capt">c#</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <div class="capt">css</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <div class="capt">html</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-java-plain-wordmark colored"></i>
+              <div class="capt">java</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-javascript-plain colored"></i>
+              <div class="capt">javascript</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-materialui-plain colored"></i>
+              <div class="capt">material ui</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-nodejs-plain colored"></i>
+              <div class="capt">nodejs</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-react-original colored"></i>
+              <div class="capt">react</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-redux-original colored"></i>
+              <div class="capt">redux</div>
+            </div>
+            <div class="icon-element">
+              <i class="devicon-git-plain colored"></i>
+              <div class="capt">git</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Work section -->
+      <div class="main-section" id="work">
+        <!-- Portfolio subsection -->
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <p class="intro">
+            Työnäytteet koostuvat sekä työssä, vapaa-ajalla että opinnoissa
+            tehdyistä projekteista. Osio päivittyy sitä mukaa, kun uusia
+            projekteja valmistuu ja ehdin koostaa tiivistelmiä vanhoista. :&#41;
+          </p>
+
+          <article class="case">
+            <h3>Jidokan tulostaulujärjestelmä</h3>
+            <section class="case-containers">
+              <div class="img-container">
+                <img
+                  class="case-img"
+                  src="images/j2.png"
+                  alt="Tulostaulu-LED">
+                <img
+                  class="case-img"
+                  src="images/j1.png"
+                  alt="Tulostaulujärjestelmän ohjaustabletti">
+              </div>
+              <div>
+                <p>
+                  Työssäni Jidoka Technologiesin R&D-tiimissä kehitän
+                  tulostaulujärjestelmää. Tulostaulujärjestelmä on
+                  IoT-kokonaisuus, joka koostuu pähkinänkuoressa
+                </p>
+                <ul>
+                  <li class="nutshell">
+                    Android-käyttöjärjestelmällä varustetusta ohjaustabletista
+                  </li>
+                  <li class="nutshell">
+                    Android-käyttöjärjestelmällä varustetusta mediatietokoneesta
+                  </li>
+                  <li class="nutshell">
+                    hubista, jonka välityksellä edellä mainitut laitteet
+                    kommunikoivat MQTT-viestein.
+                  </li>
+                </ul>
+                <p>
+                  Käytännön työ on uusien ominaisuuksien kehittämistä ja bugien
+                  korjaamista.
+                </p>
+                <h4>Teknologiat</h4>
+                <div class="tech">
+                  <div class="badge">Java</div>
+                  <div class="badge">HTML5</div>
+                  <div class="badge">CSS</div>
+                  <div class="badge">JavaScript</div>
+                  <div class="badge">XML</div>
+                  <div class="badge">MQTT</div>
+                  <div class="badge">Azure DevOps</div>
+                </div>
+              </div>
+            </section>
+          </article>
+        </section>
+        <!-- Experience subsection -->
+        <section id="experience">
+          <h2>Työkokemus</h2>
+          <div class="timeline">
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+              <div class="timeline-diamond"></div>
+            </div>
+            <section class="timeline-content">
+              <p>2022-</p>
+              <h3 class="timeline-header">Jidoka Technologies Oy</h3>
+              <p>
+                Aloitin Jidokalla rekrykoulutuksen merkeissä
+                ohjelmistokehittäjän työt 6/21. Alkuun kehitimme R&D-tiimissä
+                tulostaulujärjestelmää web-sovelluksena React-/Redux-kombolla,
+                mutta vaihdoimme melko pian Androidiin Javalla.
+                <br>
+                <br>
+                R&D-tiimin lisäksi olen työskennellyt konsulttina
+                asiakaprojektissa (11/22-5/23). Kehitimme pienellä tiimillä
+                web-portaalia, jossa frontend toteutettiin Reactilla ja
+                Reduxilla, backend C#:lla.
+              </p>
+            </section>
+            <section class="timeline-content">
+              <p>2015-2020</p>
+              <h3 class="timeline-header">Niini & Co Oy</h3>
+              <p>
+                Graafisena suunnittelijana painotalossa. Työ sisälsi
+                painotuotteiden graafista suunnittelemista ja taittoa. Tein sekä
+                asiakastöitä että in house -suunnittelua.
+              </p>
+            </section>
+            <div class="timeline-middle">
+              <div class="timeline-diamond"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Hobbies section -->
+      <section class="main-section" id="hobbies">
+        <h2>Harrastukset</h2>
+        <p class="intro">
+          En harrasta säännöllisesti mitään, mutta tässä muutamia asioita,
+          joiden parissa vapaa-aikani kuluu.
+        </p>
+        <!-- Each hobby is an article element -->
+        <article class="hobby">
+          <h3>Eläimet</h3>
+          <div class="hobby-element">
+            <div class="hobby-text">
+              <p>
+                Meillä on puolisoni kanssa koira ja kaksi kissaa. Koira on
+                pienehkö sekarotuinen, seniori-ikäinen rescue. Kissat ovat
+                maatiaisia eläinsuojeluyhdistyksiltä. Omien eläinten lisäksi
+                meillä on tilapäiskotikissa.
+              </p>
+              <p>
+                Perheemme vapaa-aikaa rytmittää yhteiselo eläinten kanssa.
+                Koiran kanssa ulkoillaan, ja kissoja pyritään aktivoimaan eri
+                tavoin. Ruokintapalvelun on pelattava tai palautetta tulee
+                välittömästi.
+              </p>
+            </div>
+            <img class="hobby-img" src="images/heemu.png" alt="Elma-kissa">
+          </div>
+        </article>
+        <article class="hobby">
+          <h3>Näpertelyprojektit</h3>
+          <div class="hobby-element">
+            <div class="hobby-text">
+              <p>
+                Olen helposti innostuvaa sorttia ja aloitan usein pieniä
+                projekteja, joissa pääsen näpertelemään ja käyttämään luovuutta.
+                Olen tehnyt digitaidetta, vektorigrafiikkaa ja kuvankäsittelyä.
+                Myös analogiset tekniikat kiinnostavat: piirroksia ja maalauksia
+                on syntynyt tusseilla, musteella ja vesiväreillä. Viimeisin
+                tekniikka, josta olen innostunut, on kohopaino Lego Dots
+                -palikoita hyödyntäen. Perinteisten kohopainotöiden tekeminen
+                kotioloissa on vähän haastavaa, mutta Lego-tekniikka ei vaadi
+                välttämättä mitään erityisiä työkaluja.
+              </p>
+            </div>
+            <img
+              class="hobby-img"
+              src="images/gothic.jpg"
+              alt="American Gothic Feline Version">
+          </div>
+        </article>
+        <article class="hobby">
+          <h3>Sosiaalinen media</h3>
+          <div class="hobby-element">
+            <div class="hobby-text">
+              <p>
+                Käytän sosiaalista mediaa sosiaaliseen kanssakäymiseen, itseni
+                viihdyttämiseen ja valistamiseen sekä jonkin sortin aktivismiin.
+                Viimeksi mainitusta merkittävin ponnistus lienee minun ja
+                puolisoni yhteinen Vegaaninen kotikokki -Instagram-tili.
+                Puolisoni hoitaa lähestulkoon kokonaan kokkauspuolen ja itse
+                vastaan tilin ylläpidosta. Tilin tarkoitus on kannustaa ihmisiä
+                syömään vegaanisesti ja insipiroida ruoanlaittoon. Ruokasomesta
+                poiketen meidän sisältö on kaiken kaikkiaan hyvin kotikutoista
+                ja toivottavasti siten helposti lähestyttävää.
+              </p>
+            </div>
+            <img
+              class="hobby-img"
+              src="images/kk2.JPG"
+              alt="Vegaaninen kotikokki">
+          </div>
+        </article>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <address>
+          <a href="mailto:ae6350@student.jamk.fi"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/kiahakala/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/kiahakala" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </address>
+        <span>&copy; 2023 Kia Hakala</span>
+      </footer>
+    </main>
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1a60a677e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
